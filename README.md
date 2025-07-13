@@ -6,3 +6,4 @@ Change directory:
 cd
 ```
 
+--version
