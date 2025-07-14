@@ -7,53 +7,60 @@ print("""
     2. subtraction
     3. division
     4. addition
+    5. exit calculator
       """)
+loop_decider = True
 
-answer_1 = input("What you want: ")
+while loop_decider:
 
-if answer_1 == "1":
-    print("ok, you have selected multiplication")
-    num1 = input("first number: ")
-    num2 = input("now enter your 2nd number: ")
+    answer_1 = input("What you want: ")
 
-    num1 = int(num1)
-    num2 = int(num2)
+    if answer_1 == "1":
+        print("ok, you have selected multiplication")
+        num1 = input("first number: ")
+        num2 = input("now enter your 2nd number: ")
 
-    final_answer = num1 * num2
+        num1 = int(num1)
+        num2 = int(num2)
 
-    print("your answer is: ", final_answer)
-elif answer_1 == "2":
-    print("ok, you have selected subtraction")
-    num1 = input("first number: ")
-    num2 = input("now enter your 2nd number: ")
+        final_answer = num1 * num2
 
-    num1 = int(num1)
-    num2 = int(num2)
+        print("your answer is: ", final_answer)
+    elif answer_1 == "2":
+        print("ok, you have selected subtraction")
+        num1 = input("first number: ")
+        num2 = input("now enter your 2nd number: ")
 
-    final_answer = num1 - num2
+        num1 = int(num1)
+        num2 = int(num2)
 
-    print("your answer is: ", final_answer)
-elif answer_1 == "3":
-    print("ok, you have selected division")
-    num1 = input("first number: ")
-    num2 = input("now enter your 2nd number: ")
+        final_answer = num1 - num2
 
-    num1 = int(num1)
-    num2 = int(num2)
+        print("your answer is: ", final_answer)
+    elif answer_1 == "3":
+        print("ok, you have selected division")
+        num1 = input("first number: ")
+        num2 = input("now enter your 2nd number: ")
 
-    final_answer = num1 / num2
+        num1 = int(num1)
+        num2 = int(num2)
 
-    print("your answer is: ", final_answer)
-elif answer_1 == "4":
-    print("ok, you have selected addition")
-    num1 = input("first number: ")
-    num2 = input("now enter your 2nd number: ")
+        final_answer = num1 / num2
 
-    num1 = int(num1)
-    num2 = int(num2)
+        print("your answer is: ", final_answer)
+    elif answer_1 == "4":
+        print("ok, you have selected addition")
+        num1 = input("first number: ")
+        num2 = input("now enter your 2nd number: ")
 
-    final_answer = num1 + num2
+        num1 = int(num1)
+        num2 = int(num2)
 
-    print("your answer is: ", final_answer)
-else:
-    print ("sorry, that input isnt an option")
+        final_answer = num1 + num2
+
+        print("your answer is: ", final_answer)
+    elif answer_1 == "5":
+        print("Thanks for using our calculator!")
+        loop_decider = False
+    else:
+        print ("sorry, that input isnt an option")
